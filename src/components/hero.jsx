@@ -26,7 +26,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 1 - (scroll * 8) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
                   >
                     Sculpting
                   </motion.h2>
@@ -35,7 +35,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 2 - (scroll * 8) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
                   >
                     innovation.
                   </motion.h2>
@@ -44,7 +44,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 3 - (scroll * 6) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
                   >
                     redefinning
                   </motion.h2>
@@ -53,7 +53,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 4 - (scroll * 4) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
                   >
                     possibilities.
                   </motion.h2>
