@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <footer className="text-gray-600 max-w-6xl mx-auto">
-      <div className="px-5 py-24 flex justify-between">
+      <div className="px-5 py-24 flex flex-col md:flex-row justify-between">
         <div className="text-center md:text-left">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <a className="flex font-medium items-center md:justify-start justify-center text-gray-900">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -89,7 +89,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 text-center md:text-left pt-6 md:pt-0">
           <div className="px-4  font-medium">
             <h2 className="font-medium text-gray-900 tracking-widest text-sm mb-3">
               CATEGORIES

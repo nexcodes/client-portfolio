@@ -1,61 +1,49 @@
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 
 const WhoWeAre = () => {
   const [scroll, setScroll] = useState(0);
-  const [weight, setWeight] = useState(1);
 
-  useEffect(() => {
-    if (window.innerWidth > 786) {
-      setWeight(2)
-    }
-  }, [setWeight]);
+  console.log(scroll);
 
-  const { scrollY } = useScroll();
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    setScroll(latest);
-  });
-  console.log(9 - (scroll / 1000) * -50);
   return (
-    <section className="bg-[#0c2340]">
-      <motion.div
-        className="max-w-3xl mx-auto px-4 py-16 text-center"
-        style={{ opacity: 9 - (scroll * 7.3) / 1000 }}
-      >
-        <div>
-          <h3 className="z-0 text-[#e8e8e8] relative font-grand-wilson-sans text-6xl">
-            WHO WE ARE
-          </h3>
-        </div>
-        <div className="mt-16">
-          <h2 className="text-[#e8e8e8] relative font-proxima-nova text-xl leading-5">
-            <strong>InSculp 3D</strong> stands at the intersection of art and
-            technology. With over{" "}
-            <strong>20 years of industry expertise</strong>, we have transformed
-            the realm of production into a canvas of creative possibilities. Our
-            journey is marked by an intricate blend of traditional craftsmanship
-            and advanced manufacturing techniques, ranging from handcrafting and
-            precision wire cutting to CNC milling, robotic arm sculpting, and
-            pioneering 3D printing technologies. At our core, we are a team of
-            skilled artisans and technicians, committed to turning your visions
-            into tangible masterpieces.
-          </h2>
-        </div>
-      </motion.div>
+    <section className="bg-[#0c2340] overflow-hidden">
+      <div className="max-w-3xl mx-auto px-4 py-16 text-center">
+        <Parallax
+          speed={-5}
+          translateY={[0, 0]}
+          opacity={[1, 0]}
+          scale={[1, 0.8]}
+          onChange={(element) => setScroll(element.progress * 100)}
+        >
+          <div>
+            <h3 className="z-0 text-[#e8e8e8] relative font-grand-wilson-sans text-6xl">
+              WHO WE ARE
+            </h3>
+          </div>
+          <div className="mt-16">
+            <h2 className="text-[#e8e8e8] relative font-proxima-nova text-xl leading-5">
+              <strong>InSculp 3D</strong> stands at the intersection of art and
+              technology. With over{" "}
+              <strong>20 years of industry expertise</strong>, we have
+              transformed the realm of production into a canvas of creative
+              possibilities. Our journey is marked by an intricate blend of
+              traditional craftsmanship and advanced manufacturing techniques,
+              ranging from handcrafting and precision wire cutting to CNC
+              milling, robotic arm sculpting, and pioneering 3D printing
+              technologies. At our core, we are a team of skilled artisans and
+              technicians, committed to turning your visions into tangible
+              masterpieces.
+            </h2>
+          </div>
+        </Parallax>
+      </div>
 
-      <motion.div
-        className="z-10 sticky top-0 flex flex-col h-screen"
-        style={{
-          translateY: -scroll + (950 * weight),
-        }}
-      >
-        <motion.div className="w-full h-full flex items-center justify-center relative overflow-hidden">
-          <motion.div
-            className="w-full max-w-[30vw] absolute"
-            style={{
-              transform: `translate(${9 - (scroll / 1000) * -50}%, 0%)`,
-            }}
+      <div className="z-10 sticky top-0 flex flex-col h-screen">
+        <div className="w-full h-full flex items-center justify-center relative">
+          <div
+            className="w-full max-w-[30vw] absolute rotate-12"
+            style={{ translate: `${-scroll * 0.4}% ${-scroll * 0.8}%` }}
           >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6a3727966ad12b089_P%2017.png"
@@ -63,10 +51,11 @@ const WhoWeAre = () => {
               alt=""
               className="w-full h-full"
             />
-          </motion.div>
-          <motion.div
-            className="w-full max-w-[30vw] absolute"
-            style={{ transform: `translate(${9 - (scroll / 1000) * 73}%, 0%)` }}
+          </div>
+
+          <div
+            className="w-full max-w-[30vw] absolute -rotate-6"
+            style={{ translate: `${scroll * 0.3}% ${-scroll * 0.8}%` }}
           >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6fdaedc633900bb91_P%20110.png"
@@ -74,23 +63,18 @@ const WhoWeAre = () => {
               alt=""
               className="w-full h-full"
             />
-          </motion.div>
-          <motion.div
-            className="w-full max-w-[30vw] absolute"
-            style={{ transform: `translate(${9 - (scroll / 1000) * 45}%, 0%)` }}
-          >
+          </div>
+          <div className="w-full max-w-[30vw] absolute">
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6acb371764ea4562b_P%2018.png"
               loading="lazy"
               alt=""
               className="w-full h-full"
             />
-          </motion.div>
-          <motion.div
-            className="w-full max-w-[30vw] absolute"
-            style={{
-              transform: `translate(${9 - (scroll / 1000) * -70}%, 0%)`,
-            }}
+          </div>
+          <div
+            className="w-full max-w-[30vw] absolute rotate-12"
+            style={{ translate: `${-scroll * 0.5}% ${scroll * 0.4}%` }}
           >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede5acb371764ea4560a_P%2015.png"
@@ -98,20 +82,17 @@ const WhoWeAre = () => {
               alt=""
               className="w-full h-full"
             />
-          </motion.div>
-          <motion.div
-            className="w-full max-w-[30vw] absolute"
-            style={{ transform: "translate(0% , 0)" }}
-          >
+          </div>
+          <div className="w-full max-w-[30vw] absolute" style={{ translate: `${scroll * 0.8}% ${scroll * 0.6}%` }}>
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede63afae725c2a6991c_P%2019.png"
               loading="lazy"
               alt=""
               className="w-full h-full"
             />
-          </motion.div>
-        </motion.div>
-      </motion.div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
