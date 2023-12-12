@@ -1,7 +1,28 @@
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
+
 const WhoWeAre = () => {
+  const [scroll, setScroll] = useState(0);
+  const [weight, setWeight] = useState(1);
+
+  useEffect(() => {
+    if (window.innerWidth > 786) {
+      setWeight(2)
+    }
+  }, [setWeight]);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScroll(latest);
+  });
+  console.log(9 - (scroll / 1000) * -50);
   return (
     <section className="bg-[#0c2340]">
-      <div className="max-w-3xl mx-auto px-4 py-16 text-center">
+      <motion.div
+        className="max-w-3xl mx-auto px-4 py-16 text-center"
+        style={{ opacity: 9 - (scroll * 7.3) / 1000 }}
+      >
         <div>
           <h3 className="z-0 text-[#e8e8e8] relative font-grand-wilson-sans text-6xl">
             WHO WE ARE
@@ -21,52 +42,76 @@ const WhoWeAre = () => {
             into tangible masterpieces.
           </h2>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="layout421_content-bottom">
-        <div className="layout421_images-wrapper">
-          <div className="layout421_image-wrapper is-image1">
+      <motion.div
+        className="z-10 sticky top-0 flex flex-col h-screen"
+        style={{
+          translateY: -scroll + (950 * weight),
+        }}
+      >
+        <motion.div className="w-full h-full flex items-center justify-center relative overflow-hidden">
+          <motion.div
+            className="w-full max-w-[30vw] absolute"
+            style={{
+              transform: `translate(${9 - (scroll / 1000) * -50}%, 0%)`,
+            }}
+          >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6a3727966ad12b089_P%2017.png"
               loading="lazy"
               alt=""
-              className="layout421_image"
+              className="w-full h-full"
             />
-          </div>
-          <div className="layout421_image-wrapper is-image2">
+          </motion.div>
+          <motion.div
+            className="w-full max-w-[30vw] absolute"
+            style={{ transform: `translate(${9 - (scroll / 1000) * 73}%, 0%)` }}
+          >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6fdaedc633900bb91_P%20110.png"
               loading="lazy"
               alt=""
-              className="layout421_image"
+              className="w-full h-full"
             />
-          </div>
-          <div className="layout421_image-wrapper is-image3">
+          </motion.div>
+          <motion.div
+            className="w-full max-w-[30vw] absolute"
+            style={{ transform: `translate(${9 - (scroll / 1000) * 45}%, 0%)` }}
+          >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6acb371764ea4562b_P%2018.png"
               loading="lazy"
               alt=""
-              className="layout421_image"
+              className="w-full h-full"
             />
-          </div>
-          <div className="layout421_image-wrapper is-image4">
+          </motion.div>
+          <motion.div
+            className="w-full max-w-[30vw] absolute"
+            style={{
+              transform: `translate(${9 - (scroll / 1000) * -70}%, 0%)`,
+            }}
+          >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede5acb371764ea4560a_P%2015.png"
               loading="lazy"
               alt=""
-              className="layout421_image"
+              className="w-full h-full"
             />
-          </div>
-          <div className="layout421_image-wrapper is-image5">
+          </motion.div>
+          <motion.div
+            className="w-full max-w-[30vw] absolute"
+            style={{ transform: "translate(0% , 0)" }}
+          >
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede63afae725c2a6991c_P%2019.png"
               loading="lazy"
               alt=""
-              className="layout421_image"
+              className="w-full h-full"
             />
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

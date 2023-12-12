@@ -15,18 +15,18 @@ const Hero = () => {
       <div className="px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col justify-start">
-            <div className="h-[200vh] flex justify-center sticky top-0 overflow-hidden">
+            <div className="h-screen md:h-[140vh] lg:h-[180vh] flex justify-center sticky top-0 overflow-hidden">
               <motion.div
                 style={{ translateY: scroll + 150 }}
                 className="z-10 text-center relative text-[#e8e8e8]"
               >
-                <div className="z-0 flex flex-col relative overflow-hidden h-20">
+                <div className="z-0 flex flex-col relative overflow-hidden h-8 md:h-20">
                   <motion.h2
                     style={{
                       translateY: -(scroll * 0.5),
                       opacity: 1 - (scroll * 8) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-3xl sm:text-5xl lg:text-8xl"
                   >
                     Sculpting
                   </motion.h2>
@@ -35,7 +35,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 2 - (scroll * 8) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-3xl sm:text-5xl lg:text-8xl"
                   >
                     innovation.
                   </motion.h2>
@@ -44,7 +44,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 3 - (scroll * 6) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-3xl sm:text-5xl lg:text-8xl"
                   >
                     redefinning
                   </motion.h2>
@@ -53,7 +53,7 @@ const Hero = () => {
                       translateY: -(scroll * 0.5),
                       opacity: 4 - (scroll * 4) / 1000,
                     }}
-                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-5xl lg:text-8xl"
+                    className="z-0 text-[#0c2340] relative font-grand-wilson-sans text-3xl sm:text-5xl lg:text-8xl"
                   >
                     possibilities.
                   </motion.h2>
