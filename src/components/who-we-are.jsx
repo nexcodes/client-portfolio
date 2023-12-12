@@ -39,10 +39,10 @@ const WhoWeAre = () => {
         </Parallax>
       </div>
 
-      <div className="z-10 sticky top-0 flex flex-col h-screen">
+      <div className="z-10 sticky top-0 flex flex-col -translate-y-20 h-[50vh] lg:h-screen">
         <div className="w-full h-full flex items-center justify-center relative">
           <div
-            className="w-full max-w-[30vw] absolute rotate-12"
+            className="w-full max-w-[50vw] md:max-w-[30vw] absolute rotate-12"
             style={{ translate: `${-scroll * 0.4}% ${-scroll * 0.8}%` }}
           >
             <img
@@ -54,7 +54,7 @@ const WhoWeAre = () => {
           </div>
 
           <div
-            className="w-full max-w-[30vw] absolute -rotate-6"
+            className="w-full max-w-[50vw] md:max-w-[30vw] absolute -rotate-6"
             style={{ translate: `${scroll * 0.3}% ${-scroll * 0.8}%` }}
           >
             <img
@@ -64,7 +64,7 @@ const WhoWeAre = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="w-full max-w-[30vw] absolute">
+          <div className="w-full max-w-[50vw] md:max-w-[30vw] absolute">
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede6acb371764ea4562b_P%2018.png"
               loading="lazy"
@@ -73,7 +73,7 @@ const WhoWeAre = () => {
             />
           </div>
           <div
-            className="w-full max-w-[30vw] absolute rotate-12"
+            className="w-full max-w-[50vw] md:max-w-[30vw] absolute rotate-12"
             style={{ translate: `${-scroll * 0.5}% ${scroll * 0.4}%` }}
           >
             <img
@@ -83,7 +83,7 @@ const WhoWeAre = () => {
               className="w-full h-full"
             />
           </div>
-          <div className="w-full max-w-[30vw] absolute" style={{ translate: `${scroll * 0.8}% ${scroll * 0.6}%` }}>
+          <div className="w-full max-w-[50vw] md:max-w-[30vw] absolute" style={{ translate: `${scroll * 0.8}% ${scroll * 0.6}%` }}>
             <img
               src="https://assets-global.website-files.com/65605df88e34fa6e673e5f1f/6560ede63afae725c2a6991c_P%2019.png"
               loading="lazy"
