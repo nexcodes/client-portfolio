@@ -3,25 +3,31 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('https://uploads-ssl.webflow.com/65605df88e34fa6e673e5f1f/656072c5c3b584f3d910ad05_Proxima%20Nova%20Regular.ttf') format('truetype');
+  font-family: "Proxima Nova";
+  src: url("https://uploads-ssl.webflow.com/65605df88e34fa6e673e5f1f/656072c5c3b584f3d910ad05_Proxima%20Nova%20Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Grand Wilson Sans';
-  src: url('https://uploads-ssl.webflow.com/65605df88e34fa6e673e5f1f/656072b869b192e37eedeaef_Grand%20Wilson%20Sans.otf') format('opentype');
+  font-family: "Grand Wilson Sans";
+  src: url("https://uploads-ssl.webflow.com/65605df88e34fa6e673e5f1f/656072b869b192e37eedeaef_Grand%20Wilson%20Sans.otf")
+    format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 .font-grand-wilson-sans {
-  font-family: 'Grand Wilson Sans', sans-serif;
+  font-family: "Grand Wilson Sans", sans-serif;
 }
 
 .font-proxima-nova {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.animation * {
+  transition: all 150ms ease-out;
 }

@@ -1,3 +1,5 @@
+import { Parallax } from "react-scroll-parallax";
+
 const Client = () => {
   return (
     <section className="overflow-hidden">
@@ -19,83 +21,86 @@ const Client = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-4 w-screen overflow-hidden">
-            <div className="grid grid-cols-[1fr] grid-rows-[auto] grid-flow-col gap-4 image-list-top">
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
+            <Parallax speed={5} translateX={["0", "6"]} translateY={[0, 0]}>
+              <div className="grid grid-cols-[1fr] grid-rows-[auto] grid-flow-col gap-4 image-list-top">
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
               </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
+            </Parallax>
+            <Parallax speed={-5} translateX={["-0", "-6"]} translateY={[0, 0]}>
+              <div className="grid grid-cols-[1fr] grid-rows-[auto] grid-flow-col gap-4 image-list-top">
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
+                <div className="w-[40vw] md:w-[30vw]">
+                  <img
+                    src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
+                    loading="lazy"
+                    id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
+                    alt=""
+                    className="object-cover aspect-[4/3] w-full"
+                  />
+                </div>
               </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-[1fr] grid-rows-[auto] grid-flow-col gap-4 image-list-top">
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-              <div className="w-[40vw] md:w-[30vw]">
-                <img
-                  src="https://assets-global.website-files.com/624380709031623bfe4aee60/6243807090316203124aee66_placeholder-image.svg"
-                  loading="lazy"
-                  id="w-node-_29dec4c9-8e90-1f9e-b5da-8c1840aaa161-673e5f2a"
-                  alt=""
-                  className="object-cover aspect-[4/3] w-full"
-                />
-              </div>
-            </div>
+            </Parallax>
           </div>
         </div>
       </div>
