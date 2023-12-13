@@ -11,7 +11,7 @@ const Client = () => {
               <br />
               CLIENTELE
             </h2>
-            <p className="text-lg font-proxima text-[#0c2340]">
+            <p className="text-lg font-proxima text-dark-blue">
               We take pride in our diverse portfolio, having worked with{" "}
               <strong>
                 museums, galleries, retail stores, and theme parks

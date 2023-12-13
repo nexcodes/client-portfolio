@@ -7,7 +7,7 @@ const WhoWeAre = () => {
   console.log(scroll);
 
   return (
-    <section className="bg-[#0c2340] overflow-hidden">
+    <section className="bg-dark-blue overflow-hidden">
       <div className="max-w-3xl mx-auto px-4 py-16 text-center">
         <Parallax
           speed={-5}

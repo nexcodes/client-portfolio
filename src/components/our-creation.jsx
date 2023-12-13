@@ -6,7 +6,7 @@ const OurCreation = () => {
           <h2 className="font-grand-wilson-sans font-semibold text-2xl md:text-4xl">
             Your Vision, Our Creation
           </h2>
-          <p className="text-lg font-proxima text-[#0c2340]">
+          <p className="text-lg font-proxima text-dark-blue">
             With <strong>InSculp 3D</strong>, the possibilities are limitless.
             Whether it&#x27;s a revolutionary art sculpture, an architectural
             marvel, or a visionary installation, we have the expertise and
