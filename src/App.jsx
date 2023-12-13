@@ -5,6 +5,7 @@ import About from "./pages/about";
 import Services from "./pages/services";
 import Footer from "./components/footer";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/service" element={<Services />} />
           </Routes>
         </BrowserRouter>
+        <Contact />
         <Footer />
       </ParallaxProvider>
     </>
