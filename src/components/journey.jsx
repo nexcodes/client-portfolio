@@ -2,13 +2,13 @@ import JourneyCard from "./journey-card";
 
 const Journey = () => {
   return (
-    <div className="relative z-0">
+    <div className="relative z-0 bg-dark-blue">
       <div className="z-[-3] relative">
         <div>
           <div className="bg-transparent">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
               <div className="flex-col justify-center items-center flex">
-                <h2 className="font-grand-wilson-sans text-xl md:text-2xl text-dark-blue">
+                <h2 className="font-grand-wilson-sans text-xl md:text-2xl text-light-gray">
                   Our Evolutionary Journey
                 </h2>
               </div>

@@ -31,7 +31,7 @@ const OurCreation = () => {
               />
             </div>
             <div className="h-full min-h-[70vh] flex-col justify-end flex relative p-8">
-              <h3 className="font-grand-wilson-sans text-3xl font-bold text-[#e8e8e8] opacity-0 group-hover:opacity-100">
+              <h3 className="font-grand-wilson-sans text-3xl font-bold text-light-gray opacity-0 group-hover:opacity-100">
                 Crimson Canyon
                 <br />
               </h3>
@@ -50,7 +50,7 @@ const OurCreation = () => {
               />
             </div>
             <div className="h-full min-h-[70vh] flex-col justify-end flex relative p-8">
-              <h3 className="font-grand-wilson-sans text-3xl font-bold text-[#e8e8e8] opacity-0 group-hover:opacity-100">
+              <h3 className="font-grand-wilson-sans text-3xl font-bold text-light-gray opacity-0 group-hover:opacity-100">
                 Crimson Canyon
                 <br />
               </h3>
@@ -69,7 +69,7 @@ const OurCreation = () => {
               />
             </div>
             <div className="h-full min-h-[70vh] flex-col justify-end flex relative p-8">
-              <h3 className="font-grand-wilson-sans text-3xl font-bold text-[#e8e8e8] opacity-0 group-hover:opacity-100">
+              <h3 className="font-grand-wilson-sans text-3xl font-bold text-light-gray opacity-0 group-hover:opacity-100">
                 Crimson Canyon
                 <br />
               </h3>

@@ -13,14 +13,14 @@ const Navbar = () => {
           <div className="flex items-center">
             <a
               href="/service"
-              className="py-2 px-4 text-lg font-normal font-proxima hover:underline"
+              className="py-2 px-4 text-xs sm:text-sm font-normal font-proxima hover:underline"
             >
               Services
             </a>
 
             <a
               href="/about"
-              className="py-2 px-4 text-lg font-normal font-proxima hover:underline"
+              className="py-2 px-4 text-xs sm:text-sm font-normal font-proxima hover:underline"
             >
               About Us
             </a>

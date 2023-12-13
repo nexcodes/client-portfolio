@@ -1,4 +1,5 @@
 import Client from "../../components/client";
+import Footer from "../../components/footer-home";
 import Hero from "../../components/hero";
 import Journey from "../../components/journey";
 import OurCreation from "../../components/our-creation";
@@ -14,6 +15,7 @@ const Home = () => {
       <Client />
       <Journey />
       <OurCreation />
+      <Footer />
     </>
   );
 };

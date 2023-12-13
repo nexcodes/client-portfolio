@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="h-screen md:h-[140vh] lg:h-[180vh] flex justify-center sticky top-0 overflow-hidden">
               <motion.div
                 style={{ translateY: scroll + 150 }}
-                className="z-10 text-center relative text-[#e8e8e8]"
+                className="z-10 text-center relative text-light-gray"
               >
                 <div className="z-0 flex flex-col relative overflow-hidden h-8 md:h-20">
                   <motion.h2

@@ -17,12 +17,12 @@ const WhoWeAre = () => {
           onChange={(element) => setScroll(element.progress * 100)}
         >
           <div>
-            <h3 className="z-0 text-[#e8e8e8] relative font-grand-wilson-sans text-6xl">
+            <h3 className="z-0 text-light-gray relative font-grand-wilson-sans text-6xl">
               WHO WE ARE
             </h3>
           </div>
           <div className="mt-16">
-            <h2 className="text-[#e8e8e8] relative font-proxima-nova text-xl leading-5">
+            <h2 className="text-light-gray relative font-proxima-nova text-xl leading-5">
               <strong>InSculp 3D</strong> stands at the intersection of art and
               technology. With over{" "}
               <strong>20 years of industry expertise</strong>, we have

@@ -2,16 +2,16 @@ import { Parallax } from "react-scroll-parallax";
 
 const Client = () => {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden bg-dark-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
         <div className="flex flex-col items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:place-items-center pb-8 md:pb-24">
-            <h2 className="font-grand-wilson-sans font-semibold text-2xl md:text-4xl">
+            <h2 className="font-grand-wilson-sans font-semibold text-2xl md:text-4xl text-light-gray">
               OUR
               <br />
               CLIENTELE
             </h2>
-            <p className="text-lg font-proxima text-dark-blue">
+            <p className="text-lg font-proxima text-light-gray">
               We take pride in our diverse portfolio, having worked with{" "}
               <strong>
                 museums, galleries, retail stores, and theme parks
