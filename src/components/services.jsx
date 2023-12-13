@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ServiceCard from "./service-card";
 
 const Services = () => {
   const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (typeof window && window !== undefined) {
+      if (window.innerWidth > 1024) {
+        setVisible(0);
+      }
+    }
+  }, [setVisible]);
 
   const arr = ["1", "2", "3", "4", "5", "6", "7"];
   return (

@@ -28,6 +28,6 @@
   font-family: "Proxima Nova", sans-serif;
 }
 
- * {
+.animation * {
   transition: all 150ms ease-out;
 }
