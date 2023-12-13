@@ -13,14 +13,14 @@ const JourneyCard = () => {
       <div className="z-[-3]" style={{ opacity: scroll * 1.6 }}>
         <div className="px-4 sm:px-12">
           <div className="w-full max-w-screen-xl mx-auto">
-            <div className="flex-col justify-center items-center flex relative">
+            <div className="flex-col justify-center lg:items-center flex relative">
               <div className="z-[-2] w-[3px] h-full bg-[#b3b3b3] absolute">
                 <div
                   className="z-[1] w-4 h-4 bg-black absolute bottom-auto -translate-x-[40%] rounded-full"
                   style={{ top: `${scroll * 100}%` }}
                 ></div>
               </div>
-              <div className="w-full gap-y-6 grid-rows-[auto_auto] grid-cols-[4rem_1fr] z-[2] md:grid-rows-[auto] md:grid-cols-[1fr_10rem_1fr] lg:grid-cols-[1fr_12rem_1fr] auto-cols-[1fr] grid relative py-16">
+              <div className="pl-8 lg:pl-0 w-full gap-y-6 z-[2] md:grid-rows-[auto] md:grid-cols-[1fr_10rem_1fr] lg:grid-cols-[1fr_12rem_1fr] auto-cols-[1fr] grid relative py-16">
                 <div>
                   <h3 className="font-grand-wilson-sans text-xl sm:text-2xl text-dark-blue">
                     Hand - Sculpting Beginnings
