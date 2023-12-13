@@ -23,7 +23,7 @@ const ServiceCard = ({ hidden, activeCard }) => {
       </div>
       <div
         className={clsx(
-          "h-full lg:min-w-[50vw] overflow-auto",
+          "h-full lg:min-w-[50vw] overflow-auto no-scrollbar",
           hidden && "hidden"
         )}
       >

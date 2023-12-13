@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("https://uploads-ssl.webflow.com/65605df88e34fa6e673e5f1f/656072c5c3b584f3d910ad05_Proxima%20Nova%20Regular.ttf")
@@ -28,6 +41,7 @@
   font-family: "Proxima Nova", sans-serif;
 }
 
-.animation * {
+.animation *,
+.services * {
   transition: all 150ms ease-out;
 }
